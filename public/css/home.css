@@ -22,6 +22,15 @@ nav {
     }
     body {
       margin: 0;
-      padding-top: 50px; /* to avoid overlap behind fixed nav */
       font-family: Arial, Helvetica, sans-serif;
+      background-image: url('https://github.com/wiseman-mabusela/learners-license/blob/master/images/background-home.jpg?raw=true');
+      background-image: url('https://images.pexels.com/photos/4349746/pexels-photo-4349746.jpeg?cs=srgb&dl=pexels-ketut-subiyanto-4349746.jpg&fm=jpg&_gl=1*o3roo6*_ga*MTk0OTcyNzIxNi4xNjY1MTk0Nzk0*_ga_8JE65Q40S6*MTY2NjU2NDM4NC42LjEuMTY2NjU2NDY4NS4wLjAuMA..');
+    text-align: center;
+    margin: 0%;
+    margin-top: 0%;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
     }
