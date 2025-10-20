@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: 'Roboto', 'Segoe UI', Arial, sans-serif;
+  background: url('https://github.com/wiseman-mabusela/learners-license/blob/master/images/pexels-thgusstavo-14807383.jpg?raw=true') no-repeat center center fixed;
+  background-size: cover;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: rgba(255,255,255,0.96);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 40px;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul a {
+  display: block;
+  text-decoration: none;
+  color: #222;
+  font-size: 1.08em;
+  padding: 10px 0;
+  transition: color 0.2s;
+}
+
+nav ul a:hover, nav ul .active a {
+  color: #299e61;
+  border-bottom: 2px solid #299e61;
+}
+
+.container {
+  margin-top: 110px;
+  max-width: 700px;
+  background: rgba(255,255,255,0.92);
+  padding: 50px 32px 40px 32px;
+  border-radius: 14px;
+  box-shadow: 0 6px 36px rgba(0,0,0,0.11);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2em;
+  color: #222;
+  margin-bottom: 28px;
+}
+
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 26px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+
+.test-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-grow: 1;
+}
+
+.test-btn {
+  background: #f36e21;
+  color: #fff;
+  font-weight: bold;
+  padding: 15px 0;
+  border-radius: 28px;
+  text-decoration: none;
+  font-size: 1.12em;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.11);
+  transition: background-color 0.18s ease;
+}
+
+.test-btn:hover {
+  background: #299e61;
+}
+
+.illustration {
+  flex-shrink: 0;
+  max-width: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.illustration img {
+  max-width: 100%;
+  height: auto;
+  user-select: none;
+  pointer-events: none;
+  opacity: 0.92;
+}
+
+.instructions {
+  color: #444;
+  font-size: 1.06em;
+  margin-bottom: 26px;
+  max-width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-resources {
+  background: #299e61;
+  color: white;
+  padding: 16px 44px;
+  border-radius: 34px;
+  font-weight: 600;
+  font-size: 1.09em;
+  text-decoration: none;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+  transition: background-color 0.2s ease;
+}
+
+.btn-resources:hover {
+  background: #f36e21;
+}
+
+@media (max-width: 720px) {
+  .main-content {
+    justify-content: center;
+  }
+  .illustration {
+    max-width: 180px;
+    margin-bottom: 32px;
+  }
+  .test-buttons {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .btn-resources {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+  }
+}
