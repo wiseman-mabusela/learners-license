@@ -1,34 +1,144 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: 'Roboto', 'Segoe UI', Arial, sans-serif;
+  background: url('https://github.com/wiseman-mabusela/learners-license/blob/master/images/pexels-thgusstavo-14807383.jpg?raw=true') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Fixed Navigation Bar */
 nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background-color: #efefef;
-      z-index: 1000;
-      display: flex;
-      justify-content: center; /* Center links horizontally */
-    }
-    nav a {
-      color: black;
-      text-align: center;
-      padding: 28px 32px;
-      text-decoration: none;
-      font-size: 17px;
-      display: inline-block;
-    }
-    nav a:hover {
-      background-color: #555;
-      color: white;
-    }
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background-image: url('https://github.com/wiseman-mabusela/learners-license/blob/master/images/Untitled%20design.png?raw=true');
-    margin: 0%;
-    margin-top: 0%;
-    text-align: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: rgba(255,255,255,0.96);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 40px;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul a {
+  display: block;
+  text-decoration: none;
+  color: #222;
+  font-size: 1.08em;
+  padding: 10px 0;
+  transition: color 0.2s;
+}
+
+nav ul a:hover, nav ul .active a {
+  color: #299e61;
+  border-bottom: 2px solid #299e61;
+}
+
+/* Main Content styles */
+.container {
+  margin-top: 110px; /* offset for fixed nav */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 600px;
+  background: rgba(255,255,255,0.92);
+  padding: 50px 25px 40px 25px;
+  border-radius: 14px;
+  box-shadow: 0 6px 36px rgba(0,0,0,0.11);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  font-size: 2em;
+  color: #222;
+  margin-bottom: 30px;
+}
+
+.btn-practice {
+  background: #f36e21;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.09em;
+  font-weight: bold;
+  padding: 15px 38px;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.11);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-practice:hover {
+  background: #299e61;
+}
+
+.booking-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: linear-gradient(90deg, #007A4D 0%, #FFB612 35%, #DE3831 70%, #002395 100%);
+  color: #fff;
+  font-size: 1.17em;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 18px 36px;
+  border-radius: 42px;
+  box-shadow: 0 4px 17px rgba(0,0,0,0.10);
+  transition: background 0.21s, box-shadow 0.18s;
+  margin-top: 22px;
+  margin-bottom: 10px;
+  border: 2.5px solid #000000;
+}
+
+.booking-link:hover {
+  background: linear-gradient(90deg, #DE3831 0%, #FFB612 50%, #007A4D 90%, #002395 100%);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.18);
+  color: #fff;
+  text-decoration: underline;
+}
+
+.booking-icon {
+  font-size: 1.5em;
+  background: #fff;
+  color: #007A4D;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 9px rgba(0,0,0,0.13);
+  border: 2px solid #FFB612;
+}
+
+
+
+/* Responsive design */
+@media (max-width: 700px) {
+  .container {
+    max-width: 98vw;
+    padding: 32px 3vw;
+  }
+  nav ul {
+    gap: 22px;
+  }
+  h1 {
+    font-size: 1.19em;
+  }
+}
